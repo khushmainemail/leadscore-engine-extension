@@ -1,4 +1,6 @@
-# LeadScore Engine (Chrome Extension) (Beta Version)
+Beta version. Features, UI, and plan limits may change as the extension evolves.
+
+# LeadScore Engine (Chrome Extension) 
 
 A smart Chrome extension (beta version) that extracts high-quality leads from Google Maps and enriches them with contact details and social links.
 
