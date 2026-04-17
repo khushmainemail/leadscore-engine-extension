@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="styles.css" />
+<body class="popup-page">
+  <div class="app-header brand-header">
+  <img src="LeadScoreIcon.png" alt="LeadScore Engine Icon" class="brand-icon" />
+  <span class="brand-text">LeadScore Engine</span>
+</div>
+
+  <div class="card">
+    <label for="licenseKey"><strong>License Key</strong></label>
+    <input
+      id="licenseKey"
+      type="text"
+      placeholder="Enter your license key"
+    />
+    <button id="activateLicense">Activate License</button>
+    <div id="licenseStatus"></div>
+  </div>
+
+  <div class="card">
+    <label for="query"><strong>Find Leads</strong></label>
+    <textarea
+      id="query"
+      placeholder="e.g. contractors in my area"
+    ></textarea>
+
+    <div class="muted" style="margin-top:10px;">
+      Try searches like:
+    </div>
+   <div class="search-templates">
+  <div class="template" data-value="real estate agents near me">Real estate agents near me</div>
+  <div class="template" data-value="dentists in New York">Dentists in my area</div>
+  <div class="template" data-value="contractors near my area">Contractors near my area</div>
+  <div class="template" data-value="lawyers in my city">Lawyers in my city</div>
+</div>
+
+    <button id="start">Find Leads</button>
+  </div>
+
+  <div id="result" class="status-text"></div>
+  <div id="licenseInfo"></div>
+
+
+  <div class="product-footer-inline">
+  <span class="product-footer-label">A product of</span>
+  <img src="KhushAITools.png" class="product-footer-logo-inline" />
+</div>
+  <script src="dist/popup.js" defer></script>
+</body>

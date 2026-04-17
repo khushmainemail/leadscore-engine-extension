@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "LeadScore Engine",
+  "version": "1.0",
+  "permissions": ["scripting", "activeTab","storage", "tabs", "downloads"],
+ "host_permissions": [
+    "https://www.google.com/*",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },  
+  "background": {
+  "service_worker": "dist/background.js",
+  "type": "module"
+},
+
+"icons": {
+  "16": "LeadScoreIcon.png",
+  "48": "LeadScoreIcon.png",
+  "128": "LeadScoreIcon.png"
+},
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/maps/*"],
+      "js": ["dist/content.js"]
+    }
+  ]
+}

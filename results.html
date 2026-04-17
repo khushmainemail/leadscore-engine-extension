@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LeadScore Engine - Results</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="results-page">
+ <div class="app-header brand-header">
+  <img src="LeadScoreIcon.png" alt="LeadScore Engine Icon" class="brand-icon" />
+  <span class="brand-text">LeadScore Engine</span>
+</div>
+
+  <div class="page-subtitle">
+    Smart Lead Ranking Dashboard
+  </div>
+
+  <div class="card">
+    <div class="topbar">
+      <div class="summary" id="summaryText">Loading leads...</div>
+      <div class="actions">
+       
+        <button id="exportCSV">Export CSV</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="tableContainer"></div>
+
+  <div class="details-panel">
+    <h2>Lead Details</h2>
+    <div id="detailsPanel" class="details-placeholder">
+      Click “View Details” on any row.
+    </div>
+  </div>
+
+  <div class="product-footer-inline">
+  <span class="product-footer-label">A product of</span>
+  <img src="KhushAITools.png" alt="Khush AI Tools" class="product-footer-logo-inline" />
+</div>
+
+  <script src="dist/results.js" defer></script>
+</body>
+</html>
